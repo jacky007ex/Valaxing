@@ -1,0 +1,7 @@
+{
+  "name": "Valaxing",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
