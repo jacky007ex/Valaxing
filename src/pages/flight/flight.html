@@ -1,19 +1,74 @@
-<ion-header>
-  <ion-navbar>
+<ion-header no-border>
+  <ion-navbar transparent>
     <ion-title>
-      Flights
+      <h2>Flights</h2>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <!-- <ion-item [ngStyle]="{'font-size': '11px'}">
+    <ion-icon class="fa fa-venus-mars" item-start small color="primary"></ion-icon>
+    <ion-label>Gender</ion-label>
+  </ion-item> -->
+  <h4>Popular Destinations</h4>
+    <ion-slides slidesPerView="2">
+    <ion-slide class="card-slide">
+        <img class="card-img" src="../../assets/imgs/taipei_flight.jpg"/>
+        <div class="card-title">Tai Pei</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/tokyo_flight.jpg"/>
+      <div class="card-title">Tokyo</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/osaka_flight.jpg"/>
+      <div class="card-title">Osaka</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/london_flight.jpg"/>
+      <div class="card-title">London</div>
+    </ion-slide>
+    </ion-slides>
+
+  <h4>Short/Long</h4>
+    <ion-slides slidesPerView="2">
+    <ion-slide class="card-slide">
+        <img class="card-img" src="../../assets/imgs/taipei_flight.jpg"/>
+        <div class="card-title">Tai Pei</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/tokyo_flight.jpg"/>
+      <div class="card-title">Tokyo</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/osaka_flight.jpg"/>
+      <div class="card-title">Osaka</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/london_flight.jpg"/>
+      <div class="card-title">London</div>
+    </ion-slide>
+    </ion-slides>
+
+  <h4>Recent Search</h4>
+    <ion-slides>
+    <ion-slide class="card-slide">
+        <img class="card-img" src="../../assets/imgs/taipei_flight.jpg"/>
+        <div class="card-title">Tai Pei</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/tokyo_flight.jpg"/>
+      <div class="card-title">Tokyo</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/osaka_flight.jpg"/>
+      <div class="card-title">Osaka</div>
+    </ion-slide>
+    <ion-slide class="card-slide">
+      <img class="card-img" src="../../assets/imgs/london_flight.jpg"/>
+      <div class="card-title">London</div>
+    </ion-slide>
+    </ion-slides>
+
 </ion-content>

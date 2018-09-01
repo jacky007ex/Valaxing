@@ -14,3 +14,67 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+h2 {
+    color: #2B2A3C;
+    font-weight: bold;
+}
+
+h3{
+    color: #2B2A3C;
+    font-weight: bold;
+}
+
+h4{
+    color: #2B2A3C;
+}
+
+h6{
+    color: #2B2A3C;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Humanst';
+    src: url('../assets/fonts/roboto-light.woff2') format('woff2'), url('../assets/fonts/roboto-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+    font-family: 'Humanst';
+  }
+
+// For tab icon setting -- start
+.fa-icons-general {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.ion-ios-fa-plane::before,
+.ion-ios-fa-plane-outline::before,
+.ion-md-fa-plane::before {
+    @extend .fa-icons-general;
+    content: "\f072";
+}
+
+.ion-ios-fa-hotel::before,
+.ion-ios-fa-hotel-outline::before,
+.ion-md-fa-hotel::before {
+    @extend .fa-icons-general;
+    content: "\f236";
+}
+
+.ion-ios-fa-profile::before,
+.ion-ios-fa-profile-outline::before,
+.ion-md-fa-profile::before {
+    @extend .fa-icons-general;
+    content: "\f007";
+}
+
+// For tab icon setting -- end
