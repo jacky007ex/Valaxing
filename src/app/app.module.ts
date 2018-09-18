@@ -11,6 +11,19 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+
+var config = { 
+    apiKey: "AIzaSyBL3irOxw4fzsPvPqBLdsrSq3D9ylrsGdY",
+    authDomain: "koala-dev-207914.firebaseapp.com",
+    databaseURL: "https://koala-dev-207914.firebaseio.com",
+    projectId: "koala-dev-207914",
+    storageBucket: "koala-dev-207914.appspot.com",
+    messagingSenderId: "33024264534" 
+}
+
 @NgModule({
   declarations: [
     MyApp,
@@ -21,7 +34,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule,
+    AngularFireDatabaseModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(config)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
