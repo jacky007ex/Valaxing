@@ -47,6 +47,6 @@ export class FlightPage {
   }
 
   pushDataToFirebase(){
-    this.afd.list(this.firebaseRef).push(this.createObj);
+    this.afd.list(this.slide1_firebaseRef).push(this.createObj);
   }
 }
