@@ -49,4 +49,9 @@ export class FlightPage {
   pushDataToFirebase(){
     this.afd.list(this.slide1_firebaseRef).push(this.createObj);
   }
+
+  getflights($event){
+    let q = $event.target.value;
+    console.log(q);
+  }
 }

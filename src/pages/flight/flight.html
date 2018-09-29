@@ -11,6 +11,7 @@
     <ion-icon class="fa fa-venus-mars" item-start small color="primary"></ion-icon>
     <ion-label>Gender</ion-label>
   </ion-item> -->
+  <ion-searchbar (ionInput)="getflights($event)"></ion-searchbar>
   <h4>{{slide1_title}}</h4>
     <ion-slides slidesPerView="2">
       <ion-slide *ngFor="let slide of slide1$ | async; let i = index" class="card-slide">
@@ -28,23 +29,21 @@
     </ion-slides>
 
   <h4>Recent Search</h4>
-    <ion-slides>
+    <ion-slides slidesPerView="1">
     <ion-slide class="card-slide">
-        <img class="card-img" src="../../assets/imgs/taipei_flight.jpg"/>
-        <div class="card-title">Tai Pei</div>
+      <ion-card class="flight-card">
+        <div>
+            <img class="flightImage" src="../assets/imgs/cx.png" />
+        </div>
+        <ion-card-header>
+            香港 ⇌ 大阪  
+        </ion-card-header>
+        <ion-card-content style="color:grey">
+          11/9/2018 (Tue) - 18/9/2018 (Tue)
+        </ion-card-content>
+      </ion-card>
     </ion-slide>
-    <ion-slide class="card-slide">
-      <img class="card-img" src="../../assets/imgs/tokyo_flight.jpg"/>
-      <div class="card-title">Tokyo</div>
-    </ion-slide>
-    <ion-slide class="card-slide">
-      <img class="card-img" src="../../assets/imgs/osaka_flight.jpg"/>
-      <div class="card-title">Osaka</div>
-    </ion-slide>
-    <ion-slide class="card-slide">
-      <img class="card-img" src="../../assets/imgs/london_flight.jpg"/>
-      <div class="card-title">London</div>
-    </ion-slide>
-    </ion-slides>
+  </ion-slides>
+
 
 </ion-content>

@@ -20,6 +20,7 @@ page-flight {
       .card-slide {
         padding: 5px; 
         opacity: 1.0;    //Can be used to adjust the opacity
+        border-radius: 10px;
       }    
 
       .card-title {
@@ -30,6 +31,36 @@ page-flight {
         font-weight: bold;
         color: #fff;
       }
+
+      .flightImage {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        width: 5%;
+      }
+
+      .flight-card-title {
+        position: absolute;
+        font-size: 1.0em;
+        font-weight: bold;
+        color: #000;
+      }
+
+      .flight-card {
+        border-radius: 10px;
+        margin: 3px; 
+        width: 98%;
+        background: #fff;
+        color: #000;
+        line-height: 1.3em;
+        border: 2px dashed #32666B;
+        box-shadow: 0 0 0 4px #fff, 2px 1px 5px 3px rgba(10, 10, 0, 0.5);
+      }
+      //Not Used now
+      .flight-card-lower {
+        border-top: 2px dashed #e5e5e5;
+      }
+
       //Not Used at current stage
       .card-subtitle {
         font-size: 1.0em;
