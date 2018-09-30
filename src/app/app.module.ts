@@ -8,6 +8,8 @@ import { HotelPage } from '../pages/hotel/hotel';
 import { FlightPage } from '../pages/flight/flight';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { FlightSearchBox } from '../pages/flight/searchBox';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -30,7 +32,8 @@ var config = {
     ProfilePage,
     HotelPage,
     FlightPage,
-    TabsPage
+    TabsPage,
+    FlightSearchBox
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ var config = {
     ProfilePage,
     HotelPage,
     FlightPage,
-    TabsPage
+    TabsPage,
+    FlightSearchBox
   ],
   providers: [
     StatusBar,

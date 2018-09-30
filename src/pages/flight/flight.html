@@ -1,20 +1,25 @@
 <ion-header no-border>
-  <ion-navbar transparent style="background-color: rgb(255, 255, 255, 0.8);">
+  <ion-navbar transparent style="background-color: rgb(247, 246, 251, 0.8);">
     <ion-title>
       <h2>Flights</h2>
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSearchBox(-1)">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content fullscreen padding>
+<ion-content fullscreen padding style="background-color: #f7f6fb">
   <!-- <ion-item [ngStyle]="{'font-size': '11px'}">
     <ion-icon class="fa fa-venus-mars" item-start small color="primary"></ion-icon>
     <ion-label>Gender</ion-label>
   </ion-item> -->
-  <ion-searchbar (ionInput)="getflights($event)"></ion-searchbar>
+  <!-- <ion-searchbar (ionInput)="getflights($event)"></ion-searchbar> -->
   <h4>{{slide1_title}}</h4>
     <ion-slides slidesPerView="2">
-      <ion-slide *ngFor="let slide of slide1$ | async; let i = index" class="card-slide">
+      <ion-slide *ngFor="let slide of slide1$ | async; let i = index" class="card-slide" (click)="openSearchBox(i)">
           <img class="card-img" src="{{slide.img}}"/>
           <div class="card-title">{{slide.name_us}}</div>
       </ion-slide>

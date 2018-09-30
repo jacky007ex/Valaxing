@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
+import { FlightSearchBox } from '../flight/searchBox'
 
 @Component({
   selector: 'page-flight',
@@ -27,7 +28,9 @@ export class FlightPage {
     img: ''
   };
 
-  constructor(public navCtrl: NavController, public afd: AngularFireDatabase,) {
+  constructor(public navCtrl: NavController, 
+              public afd: AngularFireDatabase,
+              public modalCtrl: ModalController) {
     this.getDataFromFireBase();
     //this.pushDataToFirebase();
   }
@@ -54,4 +57,10 @@ export class FlightPage {
     let q = $event.target.value;
     console.log(q);
   }
+
+  openSearchBox(index) {
+    let modal = this.modalCtrl.create(FlightSearchBox, {obj: this.slide1[index]});
+    modal.present();
+  }
+
 }
