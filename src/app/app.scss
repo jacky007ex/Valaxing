@@ -70,6 +70,41 @@ h6{
     content: "\f236";
 }
 
+.ion-ios-fa-suitcase::before,
+.ion-ios-fa-suitcase-outline::before,
+.ion-md-fa-suitcase::before {
+    @extend .fa-icons-general;
+    content: "\f0f2";
+}
+
+.ion-ios-fa-gift::before,
+.ion-ios-fa-gift-outline::before,
+.ion-md-fa-gift::before {
+    @extend .fa-icons-general;
+    content: "\f06b";
+}
+
+.ion-ios-fa-vuejs::before,
+.ion-ios-fa-vuejs-outline::before,
+.ion-md-fa-vuejs::before {
+    @extend .fa-icons-general;
+    content: "\f41f";
+}
+
+.ion-ios-fa-donate::before,
+.ion-ios-fa-donate-outline::before,
+.ion-md-fa-donate::before {
+    @extend .fa-icons-general;
+    content: "\f091";
+}
+
+.ion-ios-fa-search::before,
+.ion-ios-fa-search-outline::before,
+.ion-md-fa-search::before {
+    @extend .fa-icons-general;
+    content: "\f002";
+}
+
 .ion-ios-fa-profile::before,
 .ion-ios-fa-profile-outline::before,
 .ion-md-fa-profile::before {

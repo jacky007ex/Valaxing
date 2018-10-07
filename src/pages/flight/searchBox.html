@@ -12,7 +12,24 @@
 </ion-header>
 <ion-content>
   <br />
-  <div *ngIf="searchObj != null">
-      {{searchObj.name_us}} 
-   </div>
+  
+   <ion-list>
+
+    <ion-item>
+        <ion-icon class="fa fa-map-marker" aria-hidden="true" item-start small color="primary"></ion-icon>
+        <ion-input type="text" placeholder="From"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+        <ion-icon class="fa fa-map-marker" aria-hidden="true" item-start small color="primary"></ion-icon>
+        <!-- <div *ngIf="searchObj != null"> -->
+            <ion-input type="text" placeholder="To"></ion-input>
+        <!-- </div> -->
+       
+    </ion-item>
+  
+  </ion-list>
+  <div class="search-form">
+    <input type="text" name="firstname" placeholder="From">
+  </div>
 </ion-content>

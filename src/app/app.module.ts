@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { MyTripPage } from '../pages/myTrip/myTrip';
+import { HomePage } from '../pages/home/home';
+import { RewardPage } from '../pages/reward/reward';
 import { ProfilePage } from '../pages/profile/profile';
 import { HotelPage } from '../pages/hotel/hotel';
 import { FlightPage } from '../pages/flight/flight';
@@ -33,6 +36,9 @@ var config = {
     HotelPage,
     FlightPage,
     TabsPage,
+    MyTripPage,
+    HomePage,
+    RewardPage,
     FlightSearchBox
   ],
   imports: [
@@ -50,6 +56,9 @@ var config = {
     HotelPage,
     FlightPage,
     TabsPage,
+    HomePage,
+    MyTripPage,
+    RewardPage,
     FlightSearchBox
   ],
   providers: [
